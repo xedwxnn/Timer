@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/icon/icon.png">
     <script src="../scripts/main.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="timer">
+            <div id="hoursSelection">
+                <i class='bx bxs-up-arrow'></i>
+                <p id="hoursValue">00</p>
+                <i class='bx bxs-down-arrow'></i>
+                <p>Hours</p>
+            </div>
+
+            <div id="minutesSelection">
+                <i class='bx bxs-up-arrow'></i>
+                <p id="minutesValue">00</p>
+                <i class='bx bxs-down-arrow'></i>
+                <p>Minutes</p>
+            </div>
+
+            <div id="secondsSelection">
+                <i class='bx bxs-up-arrow'></i>
+                <p id="secondsValue">00</p>
+                <i class='bx bxs-down-arrow'></i>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <button id="startBtn">Start</button><button id="pauseBtn">Pause</button><button id="clearBtn">Clear</button>
+    </div>
 </body>
 </html>
