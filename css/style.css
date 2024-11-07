@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../assets/images/backgrounds/background.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: -1;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeSquare {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin: 10px;
+    width: 130px;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    background-color: rgba(0, 38, 141, 0.233);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-right: 2px solid rgba(255, 255, 255, .3);
+}
+
+#hoursValue, #minutesValue, #secondsValue {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.bxs-up-arrow, .bxs-down-arrow {
+    font-size: 34px;
+    cursor: pointer;
+    background-color: rgba(55, 0, 255, 1);
+    width: 103.17%;
+    text-align: center;
+}
+
+.bxs-up-arrow {
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.bxs-down-arrow {
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    margin: 50px 25px 0px 25px;
+    height: 35px;
+    width: 30%;
+    border: none;
+    background-color: rgba(55, 0, 255, 1);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px black;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
