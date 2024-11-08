@@ -40,6 +40,7 @@ body::before {
 #timer {
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 
 .timeSquare {
@@ -85,7 +86,7 @@ body::before {
 #buttons {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 }
 
 button {
