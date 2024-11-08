@@ -71,6 +71,11 @@ body::before {
     background-color: rgba(55, 0, 255, 1);
     width: 103.17%;
     text-align: center;
+    transition: .2s;
+}
+
+.bxs-up-arrow:hover, .bxs-down-arrow:hover {
+    background-color: rgba(30, 0, 235, 1);
 }
 
 .bxs-up-arrow {
@@ -105,4 +110,5 @@ button {
 
 button:hover {
     transform: scale(1.05);
+    background-color: rgba(30, 0, 235, 1);
 }
